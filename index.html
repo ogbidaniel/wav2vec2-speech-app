@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ika Speech Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">Ika Speech Recognition</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#asr">ASR</a></li>
+                    <li><a href="#tts">TTS</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <h1>Welcome to Ika Speech Recognition</h1>
+            <p>Experience state-of-the-art Automatic Speech Recognition and Text-to-Speech for the Ika language.</p>
+        </section>
+
+        <section id="asr" class="app-section">
+            <h2><i class="fas fa-microphone"></i> Automatic Speech Recognition</h2>
+            <p>Convert Ika speech to text using our advanced ASR model.</p>
+            <div class="input-group">
+                <input type="file" id="audio-upload" accept=".wav, .mp3" hidden>
+                <label for="audio-upload" class="btn btn-secondary">Upload Audio</label>
+                <button id="record-audio" class="btn btn-primary">Record Audio</button>
+            </div>
+            <div id="audio-controls" class="hidden">
+                <audio id="audio-player" controls></audio>
+                <button id="transcribe-btn" class="btn btn-primary">Transcribe</button>
+            </div>
+            <div id="transcription" class="result-box hidden">
+                <h3>Transcription</h3>
+                <p id="transcription-text"></p>
+            </div>
+        </section>
+
+        <section id="tts" class="app-section">
+            <h2><i class="fas fa-volume-up"></i> Text-to-Speech</h2>
+            <p>Generate Ika speech from text using our TTS model.</p>
+            <div class="input-group">
+                <textarea id="tts-input" rows="4" placeholder="Enter text in Ika language"></textarea>
+                <button id="synthesize-btn" class="btn btn-primary">Synthesize</button>
+            </div>
+            <div id="tts-audio" class="result-box hidden">
+                <h3>Generated Audio</h3>
+                <audio id="tts-player" controls></audio>
+                <button id="download-audio" class="btn btn-secondary">Download Audio</button>
+            </div>
+        </section>
+
+        <section id="contact" class="app-section">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>For any inquiries or feedback, please feel free to contact us:</p>
+            <p><strong>Email:</strong> ogbuigwed@gmail.com</p>
+            <p><strong>Phone:</strong> +234 (806) 430-8353</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Ika Speech Recognition | All rights reserved
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
+</html>
