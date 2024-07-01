@@ -36,9 +36,9 @@
 
         <section id="asr" class="app-section">
             <h2><i class="fas fa-microphone"></i> Automatic Speech Recognition</h2>
-            <p>Convert Ika speech to text using our advanced ASR model.</p>
+            <p>Transcribe speech with the fine-tuned ASR MMS model.</p>
             <div class="input-group">
-                <input type="file" id="audio-upload" accept=".wav, .mp3" hidden>
+                <input type="file" id="audio-upload" accept="audio/*" hidden>
                 <label for="audio-upload" class="btn btn-secondary">Upload Audio</label>
                 <button id="record-audio" class="btn btn-primary">Record Audio</button>
             </div>
@@ -81,5 +81,9 @@
     </footer>
 
     <script type="module" src="js/main.js"></script>
+    <div id="loading-indicator" class="hidden">
+        <div class="spinner"></div>
+        <p>Processing...</p>
+    </div>
 </body>
 </html>
