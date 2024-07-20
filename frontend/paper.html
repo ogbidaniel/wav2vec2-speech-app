@@ -83,6 +83,20 @@
             <img src="/frontend/assets/wav2vec2_pretraining.png" alt="Visualization of the pretraining phase of the Wav2vec2.0 models">
             <figcaption>Figure 1: Visualization of the pretraining phase of the Wav2vec2.0 models.</figcaption>
         </figure>
+        <p>The core innovation of wav2vec 2.0 lies in its 
+            contrastive learning approach, where the model 
+            learns to distinguish between true and false audio 
+            segments. This is achieved by masking a portion of 
+            the input audio and predicting the masked parts based 
+            on the context provided by the surrounding audio 
+            frames [48]. Specifically, the model employs a 
+            transformer network to capture long-range 
+            dependencies and relationships in the audio data. The 
+            output embeddings from the transformer are then 
+            used in a contrastive task where the model must 
+            identify the correct masked segments from a set of 
+            negative samples [49].
+            </p>
         <!-- Continue with methodology... -->
     </section>
 
