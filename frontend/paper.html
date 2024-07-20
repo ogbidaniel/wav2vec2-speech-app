@@ -53,7 +53,22 @@
     <section>
         <h2>METHODOLOGY</h2>
         <h3>Understanding Wav2Vec 2.0</h3>
-        <p>Wav2Vec 2.0 (wave to vector) is a speech recognition model developed by Facebook AI designed to learn useful representations of audio data from large amounts of unlabelled speech. The model operates in two primary phases: pretraining and fine-tuning.</p>
+        <p>Wav2Vec 2.0 (wave to vector) is a speech 
+            recognition model developed by Facebook AI, 
+            designed to learn useful representations of audio data 
+            from large amounts of unlabelled speech [42]. The 
+            model operates in two primary phases: pretraining 
+            and fine-tuning.</p>
+        <p>The model is composed of a multi-layer 
+            convolutional feature encoder f: X → Z which takes 
+            as input raw audio X and outputs latent speech 
+            representations z1, . . . , zT for T time-steps. They are 
+            then fed to a Transformer g: Z → C to build 
+            representations c1, . . . , cT capturing information 
+            from the entire sequence [44]. The output of the 
+            feature encoder is discretised to qt with a 
+            quantization module Z → Q to represent the targets 
+            in the self-supervised objective [45].</p>
         <figure>
             <img src="/frontend/assets/wav2vec2_pretraining.png" alt="Visualization of the pretraining phase of the Wav2vec2.0 models">
             <figcaption>Figure 1: Visualization of the pretraining phase of the Wav2vec2.0 models.</figcaption>
