@@ -69,6 +69,16 @@
             feature encoder is discretised to qt with a 
             quantization module Z → Q to represent the targets 
             in the self-supervised objective [45].</p>
+        <p>In the pretraining phase, wav2Vec 2.0 is exposed to 
+            raw audio data without any accompanying 
+            transcriptions or labels. The goal of this phase is to 
+            learn a general understanding of the audio's structure 
+            and patterns [46]. The process begins by dividing the 
+            raw audio signal into small segments or frames. 
+            These frames are then fed into a multi-layer 
+            convolutional neural network (CNN) that extracts 
+            low-level features from the audio [47].
+            </p>
         <figure>
             <img src="/frontend/assets/wav2vec2_pretraining.png" alt="Visualization of the pretraining phase of the Wav2vec2.0 models">
             <figcaption>Figure 1: Visualization of the pretraining phase of the Wav2vec2.0 models.</figcaption>
