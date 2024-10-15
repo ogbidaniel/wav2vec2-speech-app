@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speech Recognition App</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <div class="container">
-        <h1>Speech-to-Text</h1>
-        <div id="audio-input">
-            <input type="file" id="upload" accept="audio/*">
-            <label for="upload" class="button">
-                <i class="fas fa-upload"></i> Choose Audio File
-            </label>
-            <button id="record">
-                <i class="fas fa-microphone"></i> Start Recording
-            </button>
-        </div>
-        <select id="language">
-            <option value="en-US">English (US)</option>
-            <option value="fr-FR">French (France)</option>
-            <option value="es-ES">Spanish (Spain)</option>
-            <option value="de-DE">German (Germany)</option>
-        </select>
-        <div id="output"></div>
-        <div class="examples">
-            <strong>Examples:</strong>
-            <ul>
-                <li>Upload an audio file in a supported format (e.g., MP3, WAV).</li>
-                <li>Click "Start Recording" to record audio from your microphone.</li>
-                <li>Select the language of the audio.</li>
-            </ul>
-        </div>
+        <header>
+            <h1>Speech-to-text</h1>
+        </header>
+
+        <section class="upload-section">
+            <h2>Transcribe audio from a microphone or input file in your desired language.</h2>
+            <div class="upload-box">
+                <div class="drop-zone" id="audio_data">
+                    <p>Drop Audio Here<br>- or -<br>Click to Upload</p>
+                    <input type="file" id="audioInput" accept="audio/*">
+                </div>
+                <div class="controls">
+                    <label for="language">Language:</label>
+                    <select id="languageDropdown">
+                        <option value="">Select language</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <!-- Add more language options -->
+                    </select>
+                    <button id="submitButton">Submit</button>
+                    <button id="clearButton">Clear</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="output-section">
+            <h2>Output:</h2>
+            <textarea id="output" readonly></textarea>
+        </section>
+
+        <footer>
+            <p>Powered by Wav2Vec2 and MMS Models</p>
+        </footer>
     </div>
 
-    <script src="script.js"></script> </body>
+    <script src="app.js"></script>
+</body>
 </html>

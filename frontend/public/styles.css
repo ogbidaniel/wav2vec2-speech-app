@@ -4,7 +4,103 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100vh;* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: #ddd;
+        padding: 20px;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    header h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .upload-section, .output-section {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    h2 {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+    
+    .upload-box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .drop-zone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-color: #333;
+        border: 2px dashed #555;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: #bbb;
+    }
+    
+    .drop-zone input[type="file"] {
+        display: none;
+    }
+    
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    label {
+        font-size: 1em;
+    }
+    
+    select, button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #444;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    button:hover, select:hover {
+        background-color: #555;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 150px;
+        background-color: #333;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        padding: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
     background-color: #f0f0f0;
 }
 
