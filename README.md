@@ -5,3 +5,5 @@ It supports various Nigerian languages:
     - Igbo
     - Yoruba
     - Hausa
+    - Ika
+    - Ikwerre
