@@ -1,56 +1,26 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speech Recognition App</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Crowdsourcing Speech Data</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+  <!-- Include other Firebase SDKs as needed -->
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Header Component -->
+  <div id="header"></div>
 
-    <div class="container">
-        <header>
-            <h1>Speech-to-text</h1>
-        </header>
+  <!-- Main Content -->
+  <div id="content"></div>
 
-        <section class="upload-section">
-            <h2>Transcribe audio from a microphone or input file in your desired language.</h2>
-            <div class="upload-box">
-                <div class="drop-zone" id="audio_data">
-                    <p>Drop Audio Here<br>- or -<br>Click to Upload</p>
-                    <input type="file" id="audioInput" accept="audio/*">
-                </div>
-                <div class="controls">
-                    <label for="language">Language:</label>
-                    <select id="languageDropdown">
-                        <option value="">Select language</option>
-                        <option value="en">English</option>
-                        <option value="fr">French</option>
-                        <!-- Add more language options -->
-                    </select>
-                    <button id="submitButton">Submit</button>
-                    <button id="clearButton">Clear</button>
-                </div>
-            </div>
-        </section>
+  <!-- Footer Component -->
+  <div id="footer"></div>
 
-        <section class="output-section">
-            <h2>Output:</h2>
-            <textarea id="output" readonly></textarea>
-        </section>
-
-        <footer>
-            <p>Powered by Wav2Vec2 and MMS Models</p>
-        </footer>
-    </div>
-
-    <script src="app.js"></script>
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
 </body>
 </html>

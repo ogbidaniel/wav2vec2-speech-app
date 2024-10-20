@@ -1,206 +1,28 @@
+/* styles.css */
+
 body {
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #111; /* Dark background for night theme */
-    color: #ddd;
-    min-height: 100vh;* {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #111;
-        color: #ddd;
-        padding: 20px;
-    }
-    
-    .container {
-        max-width: 900px;
-        margin: 0 auto;
-        background-color: #222;
-    }
-    
-    header h1 {
-        text-align: center;
-        margin-bottom: 20px;
-        background: linear-gradient(to right, #007bff, #00ff7b); /* Example gradient */
-        -webkit-background-clip: text; /* Apply gradient to text */
-        -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
-    }
-    
-    .upload-section, .output-section {
-        margin: 20px 0;
-        padding: 20px;
-        background-color: #222;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
-    
-    h2 {
-        margin-bottom: 10px;
-        font-size: 1.5em;
-    }
-    
-    .upload-box {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .drop-zone {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-        background-color: #333;
-        border: 2px dashed #555;
-        border-radius: 10px;
-        text-align: center;
-        cursor: pointer;
-        color: #bbb;
-    }
-    
-    .drop-zone input[type="file"] {
-        display: none;
-    }
-    
-    .controls {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    label {
-        font-size: 1em;
-    }
-    
-    select, button {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #444;
-        color: #fff;
-        cursor: pointer;
-    }
-    
-    button:hover, select:hover {
-        background-color: #555;
-    }
-    
-    textarea {
-        width: 100%;
-        height: 150px;
-        background-color: #333;
-        border: none;
-        border-radius: 10px;
-        color: #fff;
-        padding: 10px;
-    }
-    
-    footer {
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    background-color: #f0f0f0;
-}
-
-.container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Navigation Bar Styles */
-nav {
-    position: fixed; /* Fix the navigation bar to the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222; /* Dark background for the navbar */
-    padding: 10px 20px;
-    z-index: 10; /* Ensure navbar stays on top of other content */
-}
-
-nav ul {
-    list-style: none;
     margin: 0;
-    padding: 0;
-    text-align: right; /* Align navigation links to the right */
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-nav a {
-    color: #eee; /* Light link color */
+    font-family: Arial, sans-serif;
+  }
+  
+  #header, #footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+  
+  #content {
+    padding: 20px;
+  }
+  
+  nav a {
+    margin-right: 15px;
     text-decoration: none;
-    font-size: 18px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#audio-input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-#upload {
-    display: none;
-}
-
-#record {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#record:hover {
-    background-color: #45a049;
-}
-
-#language {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-#output {
-    width: 100%;
-    min-height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    white-space: pre-wrap; /* Preserve line breaks */
-}
-
-.examples {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #777;
-}
-
-input,
-select,
-textarea {
-    background-color: #333; /* Darker background for input fields */
-    color: #eee;            /* Light text color for input fields */
-}
+    color: #333;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add additional styles as needed */
+  
