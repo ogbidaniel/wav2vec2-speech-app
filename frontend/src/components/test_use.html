@@ -1,0 +1,34 @@
+<!-- components/test_use.html -->
+<h2>Test & Use</h2>
+
+<!-- Language Selection -->
+<label for="language-select">Select Language:</label>
+<select id="language-select"></select>
+
+<!-- Speech-to-Text Section -->
+<h3>Speech-to-Text</h3>
+<div>
+  <input type="file" id="audio-upload" accept="audio/*">
+  <button id="record-btn">Record</button>
+  <button id="stop-btn" disabled>Stop</button>
+</div>
+<button id="transcribe-btn">Transcribe</button>
+<div>
+  <h4>Transcribed Text:</h4>
+  <p id="transcribed-text"></p>
+</div>
+
+<!-- Text-to-Speech Section -->
+<h3>Text-to-Speech</h3>
+<div>
+  <textarea id="tts-text" rows="4" cols="50" placeholder="Enter text to synthesize"></textarea>
+</div>
+<button id="synthesize-btn">Synthesize</button>
+<div>
+  <h4>Generated Speech:</h4>
+  <audio id="synthesized-audio" controls></audio>
+</div>
+
+<!-- Include necessary scripts -->
+<script src="language.js"></script>
+<script src="audioUpload.js"></script>
