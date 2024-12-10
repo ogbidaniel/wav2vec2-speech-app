@@ -1,0 +1,15 @@
+{
+  "name": "wav2vec2-speech-app",
+  "version": "1.0.0",
+  "description": "This is a research web application that provides Automatic Speech Recognition service to Nigerians.\r It supports various Nigerian languages including Igbo, Yoruba, Hausa, Ika etc",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
